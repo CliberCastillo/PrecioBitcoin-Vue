@@ -43,7 +43,7 @@
             .get("https://api.coindesk.com/v1/bpi/currentprice.json")
             .then((response) => (this.info = response.data.bpi))
             .catch((error) => {
-              alert(error);
+              Console.log(error);
             });
         },
       });
